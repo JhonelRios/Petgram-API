@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql } from 'apollo-boost';
 import { useMutation } from '@apollo/react-hooks';
+import { Link } from '@reach/router';
 
 import { MdFavoriteBorder, MdFavorite } from 'react-icons/md';
 import { useLocalStorage } from '../../hooks/useLocalStorage';
@@ -37,11 +38,11 @@ const PhotoCard = ({ id, likes = 0, src }) => {
     <Article ref={ref}>
       {show && (
         <>
-          <a href={`/?detail=${id}`}>
+          <Link to={`/details/${id}`}>
             <ImgWrapper>
               <Img src={src} alt={id} />
             </ImgWrapper>
-          </a>
+          </Link>
 
           <Button type="button" onClick={handleFavClick}>
             <Icon size="32px" /> {likes} likes!

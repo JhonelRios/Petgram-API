@@ -2,7 +2,7 @@ import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
-import PhotoCard from '../PhotoCard';
+import PhotoCard from '../components/PhotoCard';
 
 const GET_SINGLE_PHOTO = gql`
   query getSinglePhoto($id: ID!) {
@@ -17,7 +17,8 @@ const GET_SINGLE_PHOTO = gql`
   }
 `;
 
-const PhotoCardDetails = ({ id }) => {
+const Details = ({ detailId: id }) => {
+  console.log(id);
   const { loading, error, data } = useQuery(GET_SINGLE_PHOTO, { variables: { id } });
 
   if (loading) return 'Loading...';
@@ -26,4 +27,4 @@ const PhotoCardDetails = ({ id }) => {
   return <PhotoCard {...data.photo} />;
 };
 
-export default PhotoCardDetails;
+export default Details;
