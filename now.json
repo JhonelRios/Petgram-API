@@ -1,18 +1,22 @@
 {
-    "version": 2,
-    "builds": [{ "src": "package.json", "use": "@now/static-build" }],
-    "routes": [
-        {
-            "src": "(.*).json",
-            "dest": "/index.json"
-        },
-        {
-            "src": "(.*).js",
-            "dest": "/index.js"
-        },
-        {
-            "src": "/.*",
-            "dest": "/index.html"
-        }
-    ]
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "routes": [
+    {
+      "src": "(.*).json",
+      "dest": "/index.json"
+    },
+    {
+      "src": "(.*).js",
+      "dest": "/index.js"
+    },
+    {
+      "src": "(.*).png",
+      "dest": "/index.png"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
 }

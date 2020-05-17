@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 
 import PhotoCard from '../components/PhotoCard';
+import Layout from '../components/Layout';
 
 const GET_SINGLE_PHOTO = gql`
   query getSinglePhoto($id: ID!) {
@@ -23,7 +24,11 @@ const Details = ({ detailId: id }) => {
   if (loading) return 'Loading...';
   if (error) return 'Error';
 
-  return <PhotoCard {...data.photo} />;
+  return (
+    <Layout title={`Fotografía ${id}`}>
+      <PhotoCard {...data.photo} />
+    </Layout>
+  );
 };
 
 export default Details;

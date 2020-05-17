@@ -58,4 +58,4 @@ const ListOfCategories = () => {
   );
 };
 
-export default ListOfCategories;
+export default React.memo(ListOfCategories);
