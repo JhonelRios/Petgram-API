@@ -1,4 +1,4 @@
-# Petgram - PWA ⚛️
+# Petgram - PWA
 Proyecto final del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
 
 Link del proyecto: [Petgram](https://petgram-jhonel.now.sh/)
