@@ -1,25 +1,21 @@
 {
-  "name": "curso-platzi-react-avanzado",
+  "name": "Petgram",
   "version": "1.0.0",
-  "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
+  "description": "Proyecto del curso de React Avanzado de Platzi",
   "main": "index.js",
   "scripts": {
-    "build": "webpack ",
+    "build": "webpack --mode production",
     "dev": "webpack-dev-server",
-    "dev:serve": "webpack --mode development && npx serve dist -s",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:serve": "webpack --mode development && npx serve dist -s"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+    "url": "git+https://github.com/JhonelRios/Petgram-API.git"
   },
   "keywords": [],
   "author": "Jhonel Rios Jaimes <riosjaimes.j@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
-  },
-  "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
+  "homepage": "https://github.com/JhonelRios/Petgram-API#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
