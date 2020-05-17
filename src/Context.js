@@ -10,8 +10,12 @@ export const Provider = ({ children }) => {
   const value = {
     isAuth,
     activateAuth: (token) => {
-      window.sessionStorage.setItem('token', token);
       setIsAuth(true);
+      window.sessionStorage.setItem('token', token);
+    },
+    removeAuth: () => {
+      setIsAuth(false);
+      window.sessionStorage.removeItem('token');
     },
   };
 

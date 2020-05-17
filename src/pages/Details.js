@@ -18,7 +18,6 @@ const GET_SINGLE_PHOTO = gql`
 `;
 
 const Details = ({ detailId: id }) => {
-  console.log(id);
   const { loading, error, data } = useQuery(GET_SINGLE_PHOTO, { variables: { id } });
 
   if (loading) return 'Loading...';

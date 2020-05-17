@@ -24,22 +24,6 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
-  background-color: #8d00ff;
-  border-radius: 3px;
-  color: #fff;
-  height: 32px;
-  margin: 0 auto;
-  display: block;
-  width: 80%;
-  text-align: center;
-  cursor: pointer;
-
-  &[disabled] {
-    opacity: 0.3;
-  }
-`;
-
 export const Error = styled.span`
   font-size: 14px;
   color: red;
